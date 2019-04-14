@@ -1,5 +1,5 @@
 # Cody
+## A real-time, open source code editor/sandbox.
 
-A real-time, open source code editor/sandbox.
-
-- KSSBro
+#### What this repo includes: 
+- HTML, CSS, JS code for the app
