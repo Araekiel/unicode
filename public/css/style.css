@@ -1,4 +1,9 @@
 body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -17,9 +22,7 @@ body {
 
 #logo {
   float: left;
-  line-height: 20px;
-  padding: 10px;
-  font-weight: bold;
+  margin: 10px;
 }
 
 #elements {
@@ -83,4 +86,4 @@ iframe {
 
 .inac {
   background-color: #dcdcdc;
-}
+} */
