@@ -1,8 +1,9 @@
 //Elements
 const fields = Array.from(document.getElementsByClassName("field"));
+const inputFields = Array.from(document.getElementsByClassName("input-f"));
 const buttons = Array.from(document.getElementsByClassName("btn"));
 
-maximizeField();
+maximizeFields();
 
 $("#output-field")
   .contents()
@@ -13,35 +14,53 @@ buttons.forEach(function(currentButton) {
   buttonClick(currentButton);
 });
 
+inputFields.forEach(function(currentInputField) {
+  currentInputField.addEventListener("focus", function(event) {
+    toggleInactiveField(currentInputField);
+  });
+});
+
 function buttonClick(currentButton) {
   currentButton.addEventListener("click", function(event) {
+    currentButton.classList.toggle("active-btn");
     fields.forEach(function(currentField) {
       if (
         currentButton.getAttribute("data-field") ===
         currentField.getAttribute("data-field")
       ) {
-        currentField.classList.toggle("min");
-        currentField.classList.toggle("max");
+        currentField.classList.toggle("maximized-field");
       }
     });
-    maximizeField();
+    maximizeFields();
   });
 }
 
-function maximizeField() {
-  let numberMaxFields = Array.from(document.getElementsByClassName("max"))
-    .length;
-  let num = document.getElementById("output-field").classList.contains("max")
-    ? 4 * (numberMaxFields - 1)
-    : 4 * numberMaxFields;
-  console.log(numberMaxFields + ", " + num);
+function maximizeFields() {
+  let numberOfMaximizedFields = Array.from(
+    document.getElementsByClassName("maximized-field")
+  ).length;
+  let extraPixels = document
+    .getElementById("output-field")
+    .classList.contains("maximized-field")
+    ? 4 * (numberOfMaximizedFields - 1)
+    : 4 * numberOfMaximizedFields;
   fields.forEach(function(currentField) {
-    console.log(numberMaxFields);
-    if (currentField.classList.contains("max")) {
-      console.log(currentField);
+    if (currentField.classList.contains("maximized-field")) {
       currentField.style.width =
-        (window.innerWidth - (50 + num)) / numberMaxFields + "px";
-      console.log((window.innerWidth - (50 + num)) / numberMaxFields);
+        (window.innerWidth - (50 + extraPixels)) / numberOfMaximizedFields +
+        "px";
+    }
+  });
+}
+
+function toggleInactiveField(currentInputField) {
+  inputFields.forEach(function(curInputField) {
+    if (curInputField === currentInputField) {
+      curInputField.classList.remove("inactive-field");
+    } else {
+      if (!curInputField.classList.contains("inactive")) {
+        curInputField.classList.add("inactive-field");
+      }
     }
   });
 }

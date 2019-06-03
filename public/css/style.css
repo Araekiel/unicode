@@ -45,6 +45,7 @@ body {
   width: 100%;
   height: 50px;
   cursor: pointer;
+  transition: 1s linear;
 }
 
 #page-container #sidebar #button-container .btn .btn-ico {
@@ -53,8 +54,10 @@ body {
   margin: 10px;
 }
 
-#js-btn {
-  background-color: rgba(0, 0, 0, 0.5);
+#page-container #sidebar #button-container .active-btn {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  transition: 0.1s linear;
+  border-left: 3px solid white;
 }
 
 #page-container #sidebar #kssbro-logo {
@@ -73,29 +76,45 @@ body {
   width: calc(100% - 50px);
 }
 
-.field {
+#field-container .field {
   height: 100%;
   float: left;
   border: 0px;
   resize: none;
   display: none;
+  cursor: pointer;
+}
+
+#field-container .input-f {
   background-color: white;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Monaco";
 }
 
-.max {
-  display: block;
+#field-container .input-f::placeholder {
+  color: black;
 }
 
-.inactive {
+#field-container .output-f {
+  background-color: white;
+  color: black;
+  padding: 0px;
+}
+
+#field-container .maximized-field {
+  display: block;
+  transition: 0.1s linear;
+}
+
+#field-container .inactive-field {
+  /* background-color: #e4edfd; */
   background-color: #e4edfd;
   color: #568ff3;
 }
 
-#output-field {
-  width: 100px;
+#field-container .inactive-field::placeholder {
+  color: #568ff3;
 }
 
 /* body {
