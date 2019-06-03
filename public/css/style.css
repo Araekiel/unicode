@@ -78,20 +78,24 @@ body {
   float: left;
   border: 0px;
   resize: none;
-  display: block;
+  display: none;
   background-color: white;
   color: black;
   font-size: 20px;
   font-family: "Monaco";
 }
 
-.min {
-  display: none;
+.max {
+  display: block;
 }
 
-.inac {
+.inactive {
   background-color: #e4edfd;
   color: #568ff3;
+}
+
+#output-field {
+  width: 100px;
 }
 
 /* body {

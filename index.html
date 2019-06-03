@@ -21,7 +21,7 @@
           alt="Unicode"
         />
         <div class="container-element" id="button-container">
-          <div class="btn" id="html-btn">
+          <div class="btn" id="html-btn" data-field="html">
             <img
               class="btn-ico"
               id="html-btn-ico"
@@ -30,7 +30,7 @@
               alt="HTML"
             />
           </div>
-          <div class="btn" id="css-btn">
+          <div class="btn" id="css-btn" data-field="css">
             <img
               class="btn-ico"
               id="css-btn-ico"
@@ -39,7 +39,7 @@
               alt="CSS"
             />
           </div>
-          <div class="btn" id="js-btn">
+          <div class="btn" id="js-btn" data-field="js">
             <img
               class="btn-ico"
               id="js-btn-ico"
@@ -48,7 +48,7 @@
               alt="JavaScript"
             />
           </div>
-          <div class="btn" id="op-btn">
+          <div class="btn" id="op-btn" data-field="op">
             <img
               class="btn-ico"
               id="op-btn-ico"
@@ -68,21 +68,41 @@
       </div>
 
       <div class="page-element" id="field-container">
-        <textarea class="field max" id="html-field" spellcheck="none">
+        <textarea
+          class="field input max"
+          id="html-field"
+          data-field="html"
+          spellcheck="none"
+        >
 HTML</textarea
         >
-        <textarea class="field max inac" id="css-field" spellcheck="none">
+        <textarea
+          class="field input inactive"
+          id="css-field"
+          data-field="css"
+          spellcheck="none"
+        >
 CSS</textarea
         >
-        <textarea class="field max inac" id="js-field" spellcheck="none">
+        <textarea
+          class="field input inactive"
+          id="js-field"
+          data-field="js"
+          spellcheck="none"
+        >
 JS</textarea
         >
-        <textarea class="field max inac" id="output-field" spellcheck="none">
+        <!-- <textarea class="field max" id="output-field" spellcheck="none">
 Output</textarea
-        >
+        > -->
+        <iframe
+          class="field output max"
+          id="output-field"
+          data-field="op"
+        ></iframe>
       </div>
     </div>
-    <script src="public/js/jquery.js"></script>
+    <script src="public/utils/jquery.js"></script>
     <script src="public/js/script.js"></script>
   </body>
 </html>

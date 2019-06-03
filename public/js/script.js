@@ -1,10 +1,50 @@
 //Elements
 const fields = Array.from(document.getElementsByClassName("field"));
-fields.forEach(function(currentField) {
-  if (currentField.classList.contains("max")) {
-    currentField.style.width = (window.innerWidth - 66) / 4 + "px";
-  }
+const buttons = Array.from(document.getElementsByClassName("btn"));
+
+maximizeField();
+
+$("#output-field")
+  .contents()
+  .find("html")
+  .html("<html><head></head><body>Output</body></html>");
+
+buttons.forEach(function(currentButton) {
+  buttonClick(currentButton);
 });
+
+function buttonClick(currentButton) {
+  currentButton.addEventListener("click", function(event) {
+    fields.forEach(function(currentField) {
+      if (
+        currentButton.getAttribute("data-field") ===
+        currentField.getAttribute("data-field")
+      ) {
+        currentField.classList.toggle("min");
+        currentField.classList.toggle("max");
+      }
+    });
+    maximizeField();
+  });
+}
+
+function maximizeField() {
+  let numberMaxFields = Array.from(document.getElementsByClassName("max"))
+    .length;
+  let num = document.getElementById("output-field").classList.contains("max")
+    ? 4 * (numberMaxFields - 1)
+    : 4 * numberMaxFields;
+  console.log(numberMaxFields + ", " + num);
+  fields.forEach(function(currentField) {
+    console.log(numberMaxFields);
+    if (currentField.classList.contains("max")) {
+      console.log(currentField);
+      currentField.style.width =
+        (window.innerWidth - (50 + num)) / numberMaxFields + "px";
+      console.log((window.innerWidth - (50 + num)) / numberMaxFields);
+    }
+  });
+}
 
 // function updateOutput() {
 //   $("#output-field")
