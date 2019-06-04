@@ -55,7 +55,6 @@ body {
 }
 
 #page-container #sidebar #button-container .active-btn {
-  /* background-color: rgba(0, 0, 0, 0.5); */
   transition: 0.1s linear;
   border-left: 3px solid white;
 }
@@ -108,7 +107,6 @@ body {
 }
 
 #field-container .inactive-field {
-  /* background-color: #e4edfd; */
   background-color: #e4edfd;
   color: #568ff3;
 }
