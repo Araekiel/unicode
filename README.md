@@ -20,6 +20,8 @@ After installing git, clone the repository on your machine
 git clone https://github.com/KSSBro/unicode.git
 ```
 
+Then run the app with index.html
+
 ## Deployment
 
 This app is deployed on Github Pages. Link to the app - [Unicode](https://kssbro.github.io/unicode/)
