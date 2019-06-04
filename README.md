@@ -2,7 +2,7 @@
 
 # Unicode
 
-Unicode is a real time code editor/sandbox app for testing HTML, CSS and Javascript code.
+Unicode is a real time code editor/sandbox web app for testing HTML, CSS and Javascript code.
 It started off as a small project from an online tutorial with the name Cody, which was later released as it's v0.1-alpha.  
 Unicode is built with HTML, CSS, Javascript and the JQuery library
 
