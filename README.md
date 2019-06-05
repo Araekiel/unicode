@@ -29,6 +29,9 @@ This app is deployed on Github Pages. Link to the app - [Unicode](https://kssbro
 
 ## Built With
 
+- HTML
+- CSS
+- Javascript
 - [JQuery](https://jquery.com/)
 
 ## Contributing
