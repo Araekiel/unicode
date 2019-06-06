@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="./../public/utils/jquery.js"></script>
+    <title>Cody</title>
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo">Cody v0.1</div>
+      <div id="elements">
+        <div class="toggleButton active" id="html">HTML</div>
+        <div class="toggleButton" id="css">CSS</div>
+        <div class="toggleButton" id="js">JavaScript</div>
+        <div class="toggleButton active" id="output">Output</div>
+      </div>
+    </div>
+
+    <div class="fields">
+      <textarea
+        class="field"
+        id="html-field"
+        spellcheck="none"
+        placeholder="HTML"
+      >
+<p>Begin Coding!</p>
+        </textarea
+      >
+
+      <textarea
+        class="field invis inac"
+        id="css-field"
+        placeholder="CSS"
+      ></textarea>
+
+      <textarea
+        class="field invis inac"
+        id="js-field"
+        placeholder="JavaScript"
+      ></textarea>
+
+      <iframe class="field" id="output-field"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
