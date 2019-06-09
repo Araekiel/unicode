@@ -36,7 +36,7 @@ This app is deployed on Github Pages. Link to the app - [Unicode](https://kssbro
 
 ## Contributing
 
-Fork the repository to contribute.
+Fork the repository and open a pull request to contribute.
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Authors
