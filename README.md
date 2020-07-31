@@ -4,7 +4,7 @@
 
 Unicode is a real time code editor/sandbox web app for testing HTML, CSS and Javascript code.
 It started off as a small project from an online tutorial with the name Cody, a knock-off of [JS Bin](https://jsbin.com/), which was later released as it's v0.1-alpha.  
-Unicode is built with HTML, CSS, Javascript and the JQuery library.
+Unicode is built with HTML, CSS, Javascript and the jQuery library.
 It is currently at it's build v1.0.
 
 ## Getting Started
