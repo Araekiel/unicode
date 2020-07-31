@@ -59,14 +59,13 @@ body {
   border-left: 3px solid white;
 }
 
-#page-container #sidebar #kssbro-logo {
+#page-container #sidebar #araekiel-logo {
   height: 25px;
-  width: 80px;
   /* margin: 0px 0px 10px -17px; */
-  margin-left: -41px;
-  transform: rotate(-90deg);
+  margin-left: -65px;
+  transform:   rotate(-90deg);
   position: fixed;
-  bottom: 35px;
+  bottom: 60px;
   cursor: pointer;
 }
 

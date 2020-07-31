@@ -1,4 +1,4 @@
-<img alt="Unicode" src="https://raw.githubusercontent.com/KSSBro/unicode/master/public/images/logos/unicode-blue.png" height="100">
+<img alt="Unicode" src="https://raw.githubusercontent.com/Araekiel/unicode/master/public/images/logos/unicode-blue.png" height="100">
 
 # Unicode
 
@@ -18,7 +18,7 @@ It is currently at it's build v1.0.
 After installing git, clone the repository on your machine
 
 ```
-git clone https://github.com/KSSBro/unicode.git
+git clone https://github.com/Araekiel/unicode.git
 ```
 
 Then run the app with index.html
@@ -41,7 +41,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Authors
 
-- **KSSBro** - [Github](https://github.com/KSSBro)
+- **Araekiel** - [Github](https://github.com/Araekiel)
 
 ## License
 
